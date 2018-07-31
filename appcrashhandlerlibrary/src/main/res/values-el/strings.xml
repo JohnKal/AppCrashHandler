@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="send">ΑΠΟΣΤΟΛΗ</string>
+    <string name="cancel">ΑΚΥΡΩΣΗ</string>
+    <string name="send_email">Αποστολή mail...</string>
+    <string name="error">Σφάλμα</string>
+    <string name="content_message">Προέκυψε ένα σφάλμα. Θέλετε να στείλετε αναφορά του σφάλματος στον προγραμματιστή?</string>
+</resources>

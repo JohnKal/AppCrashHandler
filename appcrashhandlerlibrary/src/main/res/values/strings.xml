@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppCrashHandlerLibrary</string>
+    <string name="send">SEND</string>
+    <string name="cancel">CANCEL</string>
+    <string name="send_email">Send mail...</string>
+    <string name="error">Error</string>
+    <string name="content_message">An error occured. Do you want to send report to developer?</string>
+</resources>
