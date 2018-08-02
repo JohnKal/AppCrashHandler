@@ -1,10 +1,16 @@
 # AppCrashHandlerLibrary
 
+[![API](https://img.shields.io/badge/API-27%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=27)
+![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
+<a href="https://gr.linkedin.com/pub/giannis-kalimeris/33/76a/240">
+ <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Giannis Kalimeris's profile on LinkedIn">
+</a>
+
 This library provides a easy and simple way for developers to catch exceptions.
 You put it on your project and you can catch an exception with a simple material dialog.
 This library provides:
 
-1. Provide a material dialog with message for the user
+1. A material dialog with message for the user
 2. Send report with email to developer
 3. Append to mail the exception log
 4. Append to mail a screenshot of the app at the moment of crash.
@@ -82,7 +88,7 @@ This project was created by [John Kalimeris](https://www.linkedin.com/in/giannis
 ## License
 
 ```
-Copyright 2013 Jake Wharton
+Copyright 2018 John Kalimeris
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
