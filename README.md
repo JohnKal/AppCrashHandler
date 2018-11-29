@@ -91,9 +91,14 @@ android {
 }
 ```
 
-and in your AndroidManifest.xml put the write external storage permission
+If you would like to attach screenshot of the crash app in mail you have to put the write external storage permission in your AndroidManifest.xml.
 ```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+If you don't want the library to take screenshot of your app you have to set 
+```
+.setTakeScreenshot(false)
 ```
 
 if the targetSdkVersion of your app is 23 or above you have to request the permission at runtime like this
