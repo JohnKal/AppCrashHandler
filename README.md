@@ -81,6 +81,32 @@ Thread.setDefaultUncaughtExceptionHandler(
                                     .create());
 ```
 
+Also put this in your app build.gradle file.
+```
+android {
+   compileOptions {
+       sourceCompatibility JavaVersion.VERSION_1_8
+       targetCompatibility JavaVersion.VERSION_1_8
+   }
+}
+```
+
+and in your AndroidManifest.xml put the write external storage permission
+```
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+if the targetSdkVersion of your app is 23 or above you have to request the permission at runtime like this
+```
+if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        != PackageManager.PERMISSION_GRANTED) {
+    // Permission is not granted
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        requestPermissions(new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+    }
+}
+```
+
 ## Authors
 This project was created by [John Kalimeris](https://www.linkedin.com/in/giannis-kalimeris-24076a33/).
 
